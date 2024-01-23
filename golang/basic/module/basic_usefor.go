@@ -1,11 +1,9 @@
 // Package is module's name
-package usefor
+package use_for
 
-import (
-	"fmt"
-)
+import "fmt"
 
-//  The name of function need to set as shown blew
+// The name of function need to set as shown blew
 func UseFor(count int) {
 	for i := 0; i < count; i++ {
 		fmt.Println(i)
