@@ -1,1 +1,1 @@
-# go, java, c++ 배움을 위한 git space
+# go, java 배움을 위한 git space
