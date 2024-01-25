@@ -23,28 +23,54 @@ func Append[S any](node *Node[S], start *Node[S]) *Node[S] {
 
 // You want to create Linked List through an iterative sentence.
 func AppendMain() {
-	root := &Node[int]{nil, nil, 10}
-	fmt.Printf("for_node val: %v\n", root)
+	root := &Node[any]{
+		start: nil,
+		back:  nil,
+		val:   10,
+	}
+	// Here, the reason why valiable root was changed valiable node
+	// because they share same pointer.
+	// Put node which refers to the previous pointer in key back.
 	node := root
 	for i := 1; i < 5; i++ {
-		node = Append[int](node, &Node[int]{nil, node, i * 15})
-		fmt.Printf("for_node val: %v\n", node)
+		node = Append[any](node,
+			&Node[any]{
+				start: nil,
+				back:  node,
+				val:   i * 15,
+			})
 	}
-	// Append[int](root.start, &Node[int]{nil, root.start.start, 100})
-
-	// for node := root; node != nil; node = node.start {
-	// 	fmt.Printf("node val: %v\n", node)
-	// }
-	tail := root.start.start.start.start
+	Append[any](root.start,
+		&Node[any]{
+			start: root.start.start,
+			back:  nil,
+			val:   100,
+		})
+	for node := root; node != nil; node = node.start {
+		fmt.Printf("node val: %v\n", node)
+	}
+	tail := root.start.start.start.start.start
 	for back_node := tail; back_node != nil; back_node = back_node.back {
 		fmt.Printf("for_back_node val: %v\n", back_node)
 	}
 }
 
 func LinkedList() {
-	root := &Node[any]{nil, nil, "first"}
-	root.start = &Node[any]{nil, root, "second"}
-	root.start.start = &Node[any]{nil, root.start, "end"}
+	root := &Node[any]{
+		nil,
+		nil,
+		"first",
+	}
+	root.start = &Node[any]{
+		nil,
+		root,
+		"second",
+	}
+	root.start.start = &Node[any]{
+		nil,
+		root.start,
+		"end",
+	}
 
 	tail := root.start.start
 

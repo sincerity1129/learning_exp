@@ -4,8 +4,8 @@ import "fmt"
 
 // If you create struct, first letter must be capital letter.
 type TestType struct {
-	Value string
-	Count int
+	Value any
+	Count any
 }
 
 func TestProcess(T *TestType, text string) {
