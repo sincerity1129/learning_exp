@@ -1,4 +1,4 @@
-package learning_exp.java.basic;
+package learning_exp.java;
 
 public class string_controller {
     public static void main(String[] args) {

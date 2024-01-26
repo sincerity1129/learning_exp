@@ -1,4 +1,4 @@
-package learning_exp.java.basic;
+package learning_exp.java;
 
 class string_change {
 

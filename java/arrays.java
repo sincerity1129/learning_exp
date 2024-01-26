@@ -1,4 +1,4 @@
-package learning_exp.java.basic;
+package learning_exp.java;
 
 import java.util.ArrayList;
 import java.util.HashMap;

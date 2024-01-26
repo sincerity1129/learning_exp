@@ -1,4 +1,4 @@
-package learning_exp.java.basic;
+package learning_exp.java;
 
 public class operator {
     public static void main(String[] args) {
