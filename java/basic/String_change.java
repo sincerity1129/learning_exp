@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-class string_change {
+package basic;
+class String_change {
 
     public static void main(String[] args) {
         String exp = "This sentence is example.";

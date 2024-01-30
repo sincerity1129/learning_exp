@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-public class escape {
+package basic;
+public class Escape {
     public static void main(String[] args) {
         // Same alignment
         System.out.println(

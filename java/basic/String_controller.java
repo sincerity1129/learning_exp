@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-public class string_controller {
+package basic;
+public class String_controller {
     public static void main(String[] args) {
         String sentence = "I'm learning java about string controller.";
         // How to know text's length.

@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-public class variable {
+package basic;
+public class Variable {
     public static void main(String[] args) {
         /*
         text -> String or char

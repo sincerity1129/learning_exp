@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-public class ifandfor {
+package basic;
+public class Ifandfor {
     public static void main(String[] args) {
         // basic if
         boolean truth = true;

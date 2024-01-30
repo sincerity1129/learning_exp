@@ -1,9 +1,8 @@
-package learning_exp.java;
-
+package basic;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class arrays {
+public class Aarrays {
     public static void main(String[] args) {
         // basic array
         // why do array use?

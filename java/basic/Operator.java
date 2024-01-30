@@ -1,6 +1,5 @@
-package learning_exp.java;
-
-public class operator {
+package basic;
+public class Operator {
     public static void main(String[] args) {
         boolean one = true;
         boolean two = false;
