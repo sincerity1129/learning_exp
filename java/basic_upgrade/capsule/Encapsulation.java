@@ -1,11 +1,12 @@
-package basic_upgrade;
+package basic_upgrade.capsule;
 
 public class Encapsulation {
     /*
     default: 키워드를 아무것도 붙이지 않은 것으로 동일 패키지에서 접근 가능
     public: 외부에서 접근 가능
-    private: 외부에서 접근 불가(동일 패키지 다른 파일의 클래스 사용 가능, 다른 클래스 간에 사용 불가)
+    private: 외부에서 접근 불가(다른 클래스 간에 사용 불가)
     protected: 외부에서 접근 불가(동일 파일 다른 클래스 사용가능, 동일 패키지 다른 파일 상속 등 활용할 때 쓸 수 있음)
+    접근 강도 => (private > protected > public)
     */
     public String userName;
     private String userPhone;
